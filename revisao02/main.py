@@ -1,34 +1,13 @@
- q1 = Quiz(10, 7)
- q2 = Quiz2A('')
- Q3 = Quiz3A('')
-
-    print(q1)
-    print(q2)
-    print(q3)
-
-    print(q1.get_acertos())
-    print(q1.get_erros())
-    print(q1.calcularPontuacao())
-    print(q1.calcular_ponto())
-
-    lista_quiz = [q1, q2, q3]
-    a1 = Aluno(1, 'Bruna', lista_quiz)
-    print(a1)
-    from quiz import Quiz
-
+from quiz import *
 
 def inserirAluno():
     aluno = input('Escreva seu nome:')
-    disciplina = input('Qual disciplina: ')
-    acertos = int(input('Quantas questões você acertou?'))
-    erros = int(input('Quantas questões você errou?'))
-    return Quiz(aluno, disciplina, acertos, erros)
+    matricula = int(input('Qual disciplina: '))
+    return Quiz(aluno, matricula, acertos, erros)
 
 def escolherTipoQuiz():
     tipoQUiz = input('Qual tipo de Quiz você irá utilizar: QUIZ(NORMAL)/ QUIZ2A/ QUIZ3A')
     return tipoQUiz
-
-
 
 if __name__ == '__main__':
     while True:

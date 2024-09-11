@@ -1,9 +1,9 @@
-from quiz import *
+from quiz import * #indica que eu estou importando tudo do módulo quiz
 
 if __name__ == '__main__':
     q1 = Quiz(12, 8)
     q2 = Quiz2A(10, 10)
-    q3 = Quiz3A(5, 15)
+    q3 = Quiz3A(15, 5)
 
     print(q1)
     print(q2)
@@ -12,7 +12,7 @@ if __name__ == '__main__':
     print('testando')
     print(q1.get_acertos())
     print(q1.get_erros())
-    print(q1.calcular_pontos())
+    print(q1.calcularPontuacao())
 
     lista_quiz = [q1, q2, q3]
     a1 = Aluno(1, 'Bruna', lista_quiz)

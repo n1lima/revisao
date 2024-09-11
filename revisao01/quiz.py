@@ -37,7 +37,7 @@ class Aluno:
         info = f'matricula: {self.__matricula}\n nome:{self.__nome}\n'
         sum = 0
         for q in self.__quiz:
-            sum += q.calcular_pontos()
+            sum += q.calcularPontuacao()
         info += f'Total: {sum}\n'
         return info
 
