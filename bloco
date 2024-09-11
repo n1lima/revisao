@@ -1,0 +1,7 @@
+ q1 = Quiz('POO', 'Nicoly', 10, 7)
+
+    print(q1)
+
+    print(q1.get_acertos())
+    print(q1.get_erros())
+    print(q1.calcularPontuacao())
